@@ -29,13 +29,14 @@
 				<legend>Datos del Producto</legend>
 
 				<div class="formulario-campo">
-					<label class="campo__label"for="nombre">Nombre:</label>
-					<input type="text" class="campo__input" id="nombre" name="nombre" placeholder="Nombre del Producto">
+					<label class="campo__label" for="nombreProducto">Nombre:</label>
+					<input type="text" class="campo__input" id="nombreProducto" name="nombre" placeholder="Nombre del Producto">
 				</div>
 
 				<div class="formulario-campo">
-					<label class="campo__label" for="apellido">Precio:</label>
-					<input type="text" class="campo__input" id="apellido" name="apellido" placeholder="Precio del Producto ">
+					<label class="campo__label" for="precio">Precio:</label>
+					<input type="text" class="campo__input" id="precio" name="precio"
+						placeholder="Precio del Producto ">
 				</div>
 
 				<div class="formulario-campo">
@@ -53,7 +54,10 @@
 					<textarea id="descripcion" class="campo__input" name="descripcion"></textarea>
 				</div>
 
-				<button type="submit" class="formulario__submit" id="btnProducto">Crear Producto</button>
+				<div class="acciones">
+					<button type="submit" class="formulario__submit" id="btnProducto">Crear Producto</button>
+					<button class="refrescar" id="refrescar">Limpiar Lista</button>
+				</div>
 
 			</form>
 			<div>
@@ -65,7 +69,7 @@
 		</div>
 	</div>
 	</div>
-	<script src="js/app.js"></script>
+	<script src="js/app.js" type="module"></script>
 </body>
 
 </html>
