@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Usuarios</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<header class="header ">
+		<div class="contenedor contenido-header">
+			<nav class="barra">
+				<div class="">
+					<a href="dashboard.html">Inicio</a>
+				</div>
+
+				<a href="usuario.html">Usuarios</a>
+			</nav>
+	</header>
+
+	<h1 class="titulo">Administrador de Productos</h1>
+	<div class="contenedor">
+		<div class="contenido-flex">
+			<form id="nuevo-usuario">
+				<legend>Datos del Producto</legend>
+
+				<div class="formulario-campo">
+					<label class="campo__label"for="nombre">Nombre:</label>
+					<input type="text" class="campo__input" id="nombre" name="nombre" placeholder="Nombre del Producto">
+				</div>
+
+				<div class="formulario-campo">
+					<label class="campo__label" for="apellido">Precio:</label>
+					<input type="text" class="campo__input" id="apellido" name="apellido" placeholder="Precio del Producto ">
+				</div>
+
+				<div class="formulario-campo">
+					<label class="campo__label" for="titulo">Titulo:</label>
+					<input type="text" class="campo__input" id="titulo" name="titulo" placeholder="Agrega un Título">
+				</div>
+
+				<div class="formulario-campo">
+					<label class="campo__label" for="img">Imagen</label>
+					<input type="text" class="campo__input" id="img" name="img">
+				</div>
+
+				<div class="formulario-campo">
+					<label class="campo__label" for="descripcion">Descripción:</label>
+					<textarea id="descripcion" class="campo__input" name="descripcion"></textarea>
+				</div>
+
+				<button type="submit" class="formulario__submit" id="btnProducto">Crear Producto</button>
+
+			</form>
+			<div>
+				<main class="" id="usuario">
+					<h2>Productos</h2>
+					<div class="contenido"></div>
+				</main>
+			</div>
+		</div>
+	</div>
+	</div>
+	<script src="js/app.js"></script>
+</body>
+
+</html>
